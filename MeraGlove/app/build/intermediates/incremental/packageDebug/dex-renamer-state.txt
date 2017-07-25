@@ -1,0 +1,7 @@
+#Tue Jul 25 02:18:16 PDT 2017
+base.0=/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_136924129b63ad9e26a4231e57664b921c129f8b
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0561aa4043fef731a469770c0a4d8f769edeb720/classes.dex
+base.1=/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0561aa4043fef731a469770c0a4d8f769edeb720
+file.0=/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_136924129b63ad9e26a4231e57664b921c129f8b/classes.dex
