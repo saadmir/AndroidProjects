@@ -34,11 +34,12 @@ import static android.R.attr.value;
 import static com.meraglove.meraglove.BleAdapterService.DUMBLE_WEIGHT_UUID;
 import static com.meraglove.meraglove.BleAdapterService.GLOVE_ORIENTATION_UUID;
 import static com.meraglove.meraglove.BleAdapterService.MERA_GLOVE_SERVICE_UUID;
+import static com.meraglove.meraglove.BleAdapterService.REP_UUID;
 import static com.meraglove.meraglove.Utility.byteArrayAsHexString;
 
 public class PeripheralControlActivity extends Activity {
 
-    public FirebaseDatabase database = FirebaseDatabase.getInstance();
+//    public FirebaseDatabase database = FirebaseDatabase.getInstance();
 
     public static final int VIEW_TYPE_TEXT_VIEW = 1;
     public static final int VIEW_TYPE_BUTTON_NOTIFY = 2;
@@ -53,10 +54,12 @@ public class PeripheralControlActivity extends Activity {
     private BleAdapterService mBluetoothLeService;
     private Timer mTimer;
     TextView WeightData = null;
+    TextView RepData = null;
     LinearLayout mainActivityLayout = null;
     boolean updateUI_thread = false;
     public String weight;
     public String orientation;
+    public String reps;
 
     //    ((TextView) MainActivity.this.findViewById(R.id.forceView)).setText(String.valueOf(weight));
 
@@ -94,6 +97,8 @@ public class PeripheralControlActivity extends Activity {
         mDeviceAddress = intent.getStringExtra(EXTRA_ID);
 
         WeightData = ((TextView) this.findViewById(R.id.forceView));
+        RepData = ((TextView) this.findViewById(R.id.repView));
+
         mainActivityLayout = (LinearLayout) findViewById(R.id.Glove);
         // show the device name
         //	((TextView) this.findViewById(R.id.nameTextView)).setText("Device name: "+mDeviceName);
@@ -114,6 +119,11 @@ public class PeripheralControlActivity extends Activity {
         characteristic_properties.add(char_props);
 
         char_props = new CharacteristicProperties(MERA_GLOVE_SERVICE_UUID, GLOVE_ORIENTATION_UUID);
+        char_props.setSupports_read(true);
+        //char_props.setSupports_write(true);
+        char_props.setSupports_notify(true);
+
+        char_props = new CharacteristicProperties(MERA_GLOVE_SERVICE_UUID, REP_UUID);
         char_props.setSupports_read(true);
         //char_props.setSupports_write(true);
         char_props.setSupports_notify(true);
@@ -269,7 +279,10 @@ public class PeripheralControlActivity extends Activity {
                         weight = Utility.byteArrayAsHexString(b).toString();
                        // WeightData.setText(weight);
                     }
-
+                    if (characteristic_uuid.equals("00002a80-0000-1000-8000-00805f9b34fb")) {
+                        reps = (Utility.byteArrayAsHexString(b).toString());
+                        // WeightData.setText(weight);
+                    }
 
                     //    value_text = (TextView) findViewByUUIDs(VIEW_TYPE_TEXT_VIEW, service_uuid, characteristic_uuid);
                     //   if (value_text != null) {
@@ -453,18 +466,19 @@ public class PeripheralControlActivity extends Activity {
                     public void run() {
 
                         WeightData.setText(weight);
-
-                        if (orientation.equals("03"))
+                        //RepData.setText(reps);
+                        RepData.setText((reps));
+                        if (orientation.equals("01"))
                         {
 
                            // mainActivityLayout.setBackgroundResource( R.drawable.arrow_up );
                             mainActivityLayout.setBackgroundResource(R.drawable.arrow_down);
-                            database.getReference(String.valueOf(Calendar.getInstance().getTimeInMillis())).setValue(weight + " D");
+//                            database.getReference(String.valueOf(Calendar.getInstance().getTimeInMillis())).setValue(weight + " D");
                         }
-                        if (orientation.equals("05"))
+                        if (orientation.equals("00"))
                         {
                             mainActivityLayout.setBackgroundResource( R.drawable.arrow_up );
-                            database.getReference(String.valueOf(Calendar.getInstance().getTimeInMillis())).setValue(weight + " U");
+//                            database.getReference(String.valueOf(Calendar.getInstance().getTimeInMillis())).setValue(weight + " U");
                         }
                     }
                 });

@@ -64,6 +64,7 @@ public class BleAdapterService extends Service {
     public static final String MERA_GLOVE_SERVICE_UUID = "180F";
     public static final String DUMBLE_WEIGHT_UUID = "2A19";
     public static final String GLOVE_ORIENTATION_UUID = "2A40";
+	public static final String REP_UUID = "2A80";
 
 
     public static String CLIENT_CHARACTERISTIC_CONFIG = "00002902-0000-1000-8000-00805f9b34fb";

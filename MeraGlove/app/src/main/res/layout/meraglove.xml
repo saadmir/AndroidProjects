@@ -16,19 +16,24 @@
 
     <TextView
         android:id="@+id/forceView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:text="42"
+        android:text=""
+        android:gravity="center_horizontal"
         android:textSize="200dp"
-        android:gravity="center"
-        android:paddingLeft="10dip"
-        android:paddingBottom="20dip"
-        android:layout_marginBottom="160dp"
         android:textColor="#ffffff"
         android:textAppearance="?android:attr/textAppearanceLarge"
         />
 
+    <TextView
+        android:id="@+id/repView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="200dp"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
 
 </LinearLayout>
