@@ -801,7 +801,7 @@
     <string name="common_signin_button_text_long">Sign in with Google</string>
     <string name="connections_fmt">Connections: %1$s</string>
     <string name="contacts_permission_rationale">Contacts access is needed in order to retrieve your email address.</string>
-    <string name="default_web_client_id" translatable="false">114216639369-o90sdqqrsurl8cfgdbmn8sfo9luj80cr.apps.googleusercontent.com</string>
+    <string name="default_web_client_id" translatable="false">114216639369-efkl7iqgvmjrmjkmbcjokt856991f6um.apps.googleusercontent.com</string>
     <string name="desc_auth_code_activity">Demonstrate retrieving an auth code for authorizing your server.</string>
     <string name="desc_google_icon">Google Logo</string>
     <string name="desc_id_token_activity">Retrieving an ID Token for the user.</string>
@@ -814,10 +814,12 @@
         enabled for your project, you have a properly configured google-services.json file
         and that your device has an internet connection.
     </string>
+    <string name="firebase_database_url" translatable="false">https://meragloveoauth.firebaseio.com</string>
     <string name="gcm_defaultSenderId" translatable="false">114216639369</string>
     <string name="google_api_key" translatable="false">AIzaSyDKRzamFPsY02q1l_JCPXL8n78Vr5fap5U</string>
     <string name="google_app_id" translatable="false">1:114216639369:android:acae5c066cfe73af</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDKRzamFPsY02q1l_JCPXL8n78Vr5fap5U</string>
+    <string name="google_storage_bucket" translatable="false">meragloveoauth.appspot.com</string>
     <string name="id_token_fmt">ID Token: %s</string>
     <string name="loading">Loading…</string>
     <string name="msg_contacts_failed">Get contacts failed.</string>

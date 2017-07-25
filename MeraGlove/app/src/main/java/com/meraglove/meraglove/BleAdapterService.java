@@ -91,7 +91,7 @@ public class BleAdapterService extends Service {
 		@Override
 		public void onServicesDiscovered(BluetoothGatt gatt, int status) {
 			Message msg = Message.obtain(mActivityHandler,		GATT_SERVICES_DISCOVERED);
-			Log.d(Constants.TAG, "answer:" + msg );
+//			Log.d(Constants.TAG, "answer:" + msg );
 			msg.sendToTarget();
 		}
 
@@ -263,7 +263,7 @@ public class BleAdapterService extends Service {
 
 	// writes a value to a characteristic with/without response
 	public boolean writeCharacteristic(String serviceUuid,String characteristicUuid, byte[] value, boolean require_response) {
-		Log.d(TAG, "writeCharacteristic serviceUuid="+serviceUuid+" characteristicUuid="+characteristicUuid+" require_response="+require_response);
+//		Log.d(TAG, "writeCharacteristic serviceUuid="+serviceUuid+" characteristicUuid="+characteristicUuid+" require_response="+require_response);
 		if (mBluetoothAdapter == null || mBluetoothGatt == null) {
 			sendConsoleMessage("writeCharacteristic: mBluetoothAdapter|mBluetoothGatt null");
 			return false;
@@ -329,7 +329,7 @@ public class BleAdapterService extends Service {
       mBluetoothGatt.setCharacteristicNotification (gattChar, enabled);
       // Enable remote notifications
        descriptor = gattChar.getDescriptor(UUID.fromString(CLIENT_CHARACTERISTIC_CONFIG));//change
-       Log.d(Constants.TAG, "XXXX Descriptor:" + descriptor.getUuid());
+//       Log.d(Constants.TAG, "XXXX Descriptor:" + descriptor.getUuid());
        descriptor.setValue(BluetoothGattDescriptor.ENABLE_NOTIFICATION_VALUE);
        boolean ok = mBluetoothGatt.writeDescriptor(descriptor);
       return ok;
@@ -352,7 +352,7 @@ public class BleAdapterService extends Service {
     }
 	
 	private void sendConsoleMessage(String text) {
-		Log.d(Constants.TAG, "XXXX "+text);
+//		Log.d(Constants.TAG, "XXXX "+text);
 		Message msg = Message.obtain(mActivityHandler, MESSAGE);
 		Bundle data = new Bundle();
 		data.putString(PARCEL_TEXT, text);

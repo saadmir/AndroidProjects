@@ -60,6 +60,7 @@ public class SignInActivity extends AppCompatActivity implements
     private GoogleApiClient mGoogleApiClient;
     private TextView mStatusTextView;
     private ProgressDialog mProgressDialog;
+    private String userId = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,6 +92,7 @@ public class SignInActivity extends AppCompatActivity implements
                 Intent intent = new Intent(SignInActivity.this, PeripheralControlActivity.class);
                 intent.putExtra(PeripheralControlActivity.EXTRA_NAME, device.getName());
                 intent.putExtra(PeripheralControlActivity.EXTRA_ID, device.getAddress());
+                intent.putExtra(PeripheralControlActivity.USER_ID, userId);
                 startActivity(intent);
 
             }
@@ -177,7 +179,8 @@ public class SignInActivity extends AppCompatActivity implements
         if (result.isSuccess()) {
             // Signed in successfully, show authenticated UI.
             GoogleSignInAccount acct = result.getSignInAccount();
-            mStatusTextView.setText(getString(R.string.signed_in_fmt, acct.getDisplayName()));
+            userId = acct.getDisplayName();
+            mStatusTextView.setText(getString(R.string.signed_in_fmt, userId));
             Log.d(TAG, "> > > > > > > signedIn");
 //            Intent intent = new Intent(this, MainActivity.class);
             updateUI(true);
