@@ -67,7 +67,7 @@ MERGED from [com.android.support:support-compat:25.3.1] /Users/smir/.android/bui
 activity#com.meraglove.meraglove.SignInActivity
 ADDED from /Users/smir/mergestation/AndroidProjects/MeraGlove/app/src/main/AndroidManifest.xml:18:9-26:20
 	android:label
-		ADDED from /Users/smir/mergestation/AndroidProjects/MeraGlove/app/src/main/AndroidManifest.xml:20:13-58
+		ADDED from /Users/smir/mergestation/AndroidProjects/MeraGlove/app/src/main/AndroidManifest.xml:20:13-39
 	android:theme
 		ADDED from /Users/smir/mergestation/AndroidProjects/MeraGlove/app/src/main/AndroidManifest.xml:21:13-66
 	android:name

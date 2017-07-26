@@ -61,6 +61,7 @@ public class SignInActivity extends AppCompatActivity implements
     private TextView mStatusTextView;
     private ProgressDialog mProgressDialog;
     private String userId = "";
+    private String googleId = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,6 +93,7 @@ public class SignInActivity extends AppCompatActivity implements
                 Intent intent = new Intent(SignInActivity.this, PeripheralControlActivity.class);
                 intent.putExtra(PeripheralControlActivity.EXTRA_NAME, device.getName());
                 intent.putExtra(PeripheralControlActivity.EXTRA_ID, device.getAddress());
+                intent.putExtra(PeripheralControlActivity.GOOGLE_ID, googleId);
                 intent.putExtra(PeripheralControlActivity.USER_ID, userId);
                 startActivity(intent);
 
@@ -179,14 +181,11 @@ public class SignInActivity extends AppCompatActivity implements
         if (result.isSuccess()) {
             // Signed in successfully, show authenticated UI.
             GoogleSignInAccount acct = result.getSignInAccount();
+            googleId = acct.getId();
             userId = acct.getDisplayName();
-            mStatusTextView.setText(getString(R.string.signed_in_fmt, userId));
-            Log.d(TAG, "> > > > > > > signedIn");
-//            Intent intent = new Intent(this, MainActivity.class);
             updateUI(true);
             findViewById(R.id.scanButton).setVisibility(View.VISIBLE);
         } else {
-            // Signed out, show unauthenticated UI.
             updateUI(false);
         }
     }
@@ -264,6 +263,7 @@ public class SignInActivity extends AppCompatActivity implements
         if (signedIn) {
             findViewById(R.id.sign_in_button).setVisibility(View.GONE);
             findViewById(R.id.sign_out_and_disconnect).setVisibility(View.VISIBLE);
+            mStatusTextView.setText(getString(R.string.signed_in_fmt, userId));
         } else {
             mStatusTextView.setText(R.string.signed_out);
 

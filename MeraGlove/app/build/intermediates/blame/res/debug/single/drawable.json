@@ -8,12 +8,12 @@
         "source": "/Users/smir/.android/build-cache/c55bb8a977bfe599cc66afaa5f687a0f034fd1cc/output/res/drawable/abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
-        "source": "/Users/smir/.android/build-cache/564e0d0ae2ba0d4b3ab197ffb889fbad2615e7ff/output/res/drawable/common_google_signin_btn_icon_light.xml"
-    },
-    {
         "merged": "/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_text_dark_normal.xml",
         "source": "/Users/smir/.android/build-cache/564e0d0ae2ba0d4b3ab197ffb889fbad2615e7ff/output/res/drawable/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_light.xml",
+        "source": "/Users/smir/.android/build-cache/564e0d0ae2ba0d4b3ab197ffb889fbad2615e7ff/output/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/res/merged/debug/drawable/common_google_signin_btn_icon_disabled.xml",
@@ -72,16 +72,16 @@
         "source": "/Users/smir/.android/build-cache/c55bb8a977bfe599cc66afaa5f687a0f034fd1cc/output/res/drawable/abc_seekbar_track_material.xml"
     },
     {
-        "merged": "/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
-        "source": "/Users/smir/.android/build-cache/c55bb8a977bfe599cc66afaa5f687a0f034fd1cc/output/res/drawable/abc_seekbar_tick_mark_material.xml"
+        "merged": "/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
+        "source": "/Users/smir/.android/build-cache/c55bb8a977bfe599cc66afaa5f687a0f034fd1cc/output/res/drawable/abc_btn_borderless_material.xml"
     },
     {
         "merged": "/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/res/merged/debug/drawable/abc_ic_clear_material.xml",
         "source": "/Users/smir/.android/build-cache/c55bb8a977bfe599cc66afaa5f687a0f034fd1cc/output/res/drawable/abc_ic_clear_material.xml"
     },
     {
-        "merged": "/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/res/merged/debug/drawable/abc_btn_borderless_material.xml",
-        "source": "/Users/smir/.android/build-cache/c55bb8a977bfe599cc66afaa5f687a0f034fd1cc/output/res/drawable/abc_btn_borderless_material.xml"
+        "merged": "/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/Users/smir/.android/build-cache/c55bb8a977bfe599cc66afaa5f687a0f034fd1cc/output/res/drawable/abc_seekbar_tick_mark_material.xml"
     },
     {
         "merged": "/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/res/merged/debug/drawable/abc_ic_ab_back_material.xml",

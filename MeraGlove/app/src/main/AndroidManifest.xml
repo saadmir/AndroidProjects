@@ -17,7 +17,7 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name="com.meraglove.meraglove.SignInActivity"
-            android:label="@string/name_sign_in_activity"
+            android:label="Mera Glove"
             android:theme="@style/ThemeOverlay.MyNoTitleActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

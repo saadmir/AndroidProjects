@@ -47,10 +47,12 @@ public class PeripheralControlActivity extends Activity {
     public static final String EXTRA_NAME = "name";
     public static final String EXTRA_ID = "id";
     public static final String USER_ID = "";
+    public static final String GOOGLE_ID = "";
 
     private ArrayList<CharacteristicProperties> characteristic_properties;
 
     private String userId;
+    private String googleId;
     private String mDeviceName;
     private String mDeviceAddress;
     private BleAdapterService mBluetoothLeService;
@@ -99,7 +101,9 @@ public class PeripheralControlActivity extends Activity {
         mDeviceName = intent.getStringExtra(EXTRA_NAME);
         mDeviceAddress = intent.getStringExtra(EXTRA_ID);
         userId = intent.getStringExtra(USER_ID);
+        googleId = intent.getStringExtra(GOOGLE_ID);
 
+        showMsg(userId);
         ((TextView) findViewById(R.id.status)).setText(getString(R.string.signed_in_fmt, userId));
 
         forceView = ((TextView) findViewById(R.id.forceView));
@@ -113,6 +117,7 @@ public class PeripheralControlActivity extends Activity {
                 if (mBluetoothLeService != null) {
                     if (mBluetoothLeService.connect(mDeviceAddress)) {
                         connectButton.setEnabled(false);
+                        connectButton.setText("Disconnect");
                     } else {
                         showMsg("onConnect: failed to connect");
                     }
@@ -276,29 +281,21 @@ public class PeripheralControlActivity extends Activity {
                     enableGattOpButtons();
                     break;
                 case BleAdapterService.NOTIFICATION_RECEIVED:
-//                    Log.d(Constants.TAG, "Handler received notification");
                     bundle = msg.getData();
                     service_uuid = bundle.getString(BleAdapterService.PARCEL_SERVICE_UUID);
                     characteristic_uuid = bundle.getString(BleAdapterService.PARCEL_CHARACTERISTIC_UUID);
-//                    Log.d(Constants.TAG, "Handler processing characteristic " + characteristic_uuid + " of " + service_uuid);
                     b = bundle.getByteArray(BleAdapterService.PARCEL_VALUE);
-//                    Log.d(Constants.TAG, "Value=" + byteArrayAsHexString(b));
 
                     if (characteristic_uuid.equals("00002a40-0000-1000-8000-00805f9b34fb")) {
-                        if (byteArrayAsHexString(b).toString().equals("01")) {
-                            newOrientation = "D";
-                        }
-                        if (byteArrayAsHexString(b).toString().equals("00")) {
-                            newOrientation = "U";
-                        }
+                        newOrientation = byteArrayAsHexString(b).toString().equals("01") ? "D" : "U";
                     }
 
                     if (characteristic_uuid.equals("00002a19-0000-1000-8000-00805f9b34fb")) {
-                        newWeight = Utility.byteArrayAsHexString(b).toString();
+                        newWeight = String.valueOf(Integer.parseInt(Utility.byteArrayAsHexString(b).toString(), 16));
                     }
 
                     if (characteristic_uuid.equals("00002a80-0000-1000-8000-00805f9b34fb")) {
-                        newReps = (Utility.byteArrayAsHexString(b).toString());
+                        newReps = String.valueOf(Integer.parseInt(Utility.byteArrayAsHexString(b).toString(), 16));
                     }
 
                     break;
@@ -342,9 +339,14 @@ public class PeripheralControlActivity extends Activity {
                     case 2:
                         onNotify("0000180F-0000-1000-8000-00805f9b34fb", "00002A40-0000-1000-8000-00805f9b34fb");
                         counter++;
+                        return;
+
+                    case 3:
+                        onNotify("0000180F-0000-1000-8000-00805f9b34fb", "00002A80-0000-1000-8000-00805f9b34fb");
+                        counter++;
                         updateUI_thread = true;
                         return;
-                    case 3:
+                    case 4:
                         new Thread(new Task()).start();
                         counter++;
                         break;
@@ -356,7 +358,7 @@ public class PeripheralControlActivity extends Activity {
                 }
 
             }
-        }, 0, 2000);
+        }, 0, 600);
     }
 
     private void stopTimer() {
@@ -368,7 +370,7 @@ public class PeripheralControlActivity extends Activity {
 
     private void updateRssi(int rssi) {}
     private void showMsg(String msg) {
-//        Log.d(Constants.TAG, msg);
+        Log.d(Constants.TAG, msg);
     }
     private ArrayList<Button> getGattOpButtons(ViewGroup root) { return null; }
     private void enableGattOpButtons() {}
@@ -404,14 +406,29 @@ public class PeripheralControlActivity extends Activity {
                             updateDatabase = true;
                         }
 
-                        if (newOrientation.equalsIgnoreCase(orientation)) {
+                        if (!newOrientation.equalsIgnoreCase(orientation)) {
                             orientation = newOrientation;
                             updateDatabase = true;
                         }
 
                         if (updateDatabase) {
-                            database.getReference(userId).setValue(String.valueOf(Calendar.getInstance().getTimeInMillis()) + " " + weight + " " + orientation + " " + reps);
-//                            database.getReference(String.valueOf(Calendar.getInstance().getTimeInMillis())).setValue(weight + " " + orientation + " " + reps);
+//                            database.getReference(userId).setValue(String.valueOf(Calendar.getInstance().getTimeInMillis()) + " " + weight + " " + orientation + " " + reps);
+
+                            DatabaseReference databaseReference = database.getReference("gloves");
+
+                            String key = databaseReference.child(googleId).push().getKey();
+
+                            HashMap<String, Object> row = new HashMap<>();
+                            row.put("timestamp", String.valueOf(Calendar.getInstance().getTimeInMillis()));
+                            row.put("userId", userId);
+                            row.put("googleId", googleId);
+                            row.put("weight", weight);
+                            row.put("orientation", orientation);
+                            row.put("reps", reps);
+
+                            Map<String, Object> databaseUpdate = new HashMap<>();
+                            databaseUpdate.put(googleId + "/" + key, row);
+                            databaseReference.updateChildren(databaseUpdate);
                             glove.setBackgroundResource(orientation.equalsIgnoreCase(("D")) ? R.drawable.arrow_down : R.drawable.arrow_up);
                         }
                     }
