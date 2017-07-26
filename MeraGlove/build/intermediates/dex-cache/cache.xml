@@ -2,22 +2,256 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/564e0d0ae2ba0d4b3ab197ffb889fbad2615e7ff/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="1521f3a8e34387581c5bb6c49085b174a4a5c4db">
-        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0561aa4043fef731a469770c0a4d8f769edeb720/classes.dex" />
+        sha1="2a2d9cd43adbe7599a78f2293273a77881c1909a">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_3fcee5dbb965439f39a65cccaec0deda2dd1498d.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/d44a2b842d5c0e6e1ad20f97ef9e82c8d71ec851/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_136924129b63ad9e26a4231e57664b921c129f8b/classes.dex" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_3bf9b4d89e9d168ee235bc87b25fe2b00efa7274.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/8863568a29ecbf613b1ad1e297d6c4d6279e6939/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a3d07dfddc7c3c7547fb953847589d586f1e2077">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_27902c071403ee8df83a514c486abf44c6d6f6fd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/4e0a015dbc249abecb1f65fc3987e041101cd75e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3560fc891bbecd8982acbace15ccead59c3fedd1">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_2feb380801020da087eff957fe8640953ff05bc7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/a5c1113072988878ca7c3cc068422847943418a5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="86baa7d1051901fc1b8e7f596732f71f32175bde">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_70d06413a957db207aa6a27a416ed35f8720eb0a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/ac25a62e33f409c1e7fe4ac813a94c6067c7f497/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_1719778929aa03a6a707266a3f8f5c18e3f041dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/c55bb8a977bfe599cc66afaa5f687a0f034fd1cc/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_fb29db0bf2b5b6384f526e5fff5ce3c1882d6d61.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/2aa4a4715bd89185489a4c1e842e5b73d5bee54d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9a6350134db98fb39e212ddca5f0bad9280e8f3f">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_8b244bc8411a93b86963d9419b12f9903f03fa92.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/1cc48fb834eb107022d9516c3a8a7ed47b99d953/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_fa94978a27c29533f6cb9a75407dd88ed00db441.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/4487f686e0b3a398fc91969a990ea6315e72dde6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4262bcd49b19d558c241bf8c68470fcc6fa1ac84">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_7923e3aa2ab4cab6325e18f3abac80f2f744dbac.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_e8167356ad68784d604803c2b9959524ff47ee07.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/222a3e2194e4ea72c64e7e20e5c2bf6304097078/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_b703aed64d316e396b93c6f5253ddcc4dae7a579.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/5afe3a3a1095d57bd05df8de4bb2dcd2392fdfa8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_8ada5b7669735ef1c4898b83d2f55f5ff3f7c5f6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/ec026af4ebc5189b7d29c09dedbe43a053b8cd21/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_ab545d34d8291d6430498e297abd81ef7c0e3435.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/adeb9b7423125a7a74c48acee927b9b99b112936/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_1e703b856a88e4f1d3b14ecf878df3511fcdd41a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/9a8e965bc93fc3dc8753c274e65eb5b5a7a97624/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_3108abe06c43de297512cda15e02ecb0197eade7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/d805c2c7c8651796390842985686cb6e60588078/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_e1b029c5cef6c6256557b7c7a834457112dd8d14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/60c77323b7b08b85b367463788213af12467686a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_25f4fdc23d2584b5f15ac113f25d991167ec7829.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/0acc9b901b1ce0620cf22d02efd0573e43c17583/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="fc5624185d414a0f572bfb3df7d841ceb335aef9">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_94e49eb577fd8dd292d0824beaa2900ff4db0310.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/5b5b220262da8f43c36e36a3ebfb3b15ba4e4a71/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2c1d9fbe7d2f686b3dcdbc3f63a983a211401ca3">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_07a579ce8ad79f594c10240c5a8ccd63987fc7ba.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/c95a82d73764e1b2db097adb8d79f38dcf844ebc/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_665d725d87bb656ff828fda464aeaf0b15ba91dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/f95384453489051efa61808a0aa26808c2cf7804/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a71be5f29a1c1e3fd3e84472742668f101a5b936">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_7be5ca0fda777f6bf13579a2f2693d98adadd46c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/48364769fb2cc541db69462b38a2e550989f2fc6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3a1bac2cc31df44dbf1f9bbf2c675319503c9271">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_5cc262fb3ddd0e048090e7aff91b5b74dfa7340c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_0625089d1fb0ee87c2571fc91b3dea198bfab962.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/10b36b4592dbb3ce59ef7571eac5b8b4c0adfd1f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_f404e5c22dbd9729e935726180c54970f3010178.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/3f785bb0ce3aa77bbc41fcc0cc311ea0bde81f7e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_f036fb3aac973f08a92c15b6623105bc5245bb23.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/dcd2892cd4c08d95ea48bd9d52c2a9113f82956c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2737331564e0084fc0eb30ba500564a6dbe5e98f">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_43c0a62658667aca574692b0bcf93c52134a768d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/smir/.android/build-cache/9ea5a144f06632b89d3860a67a1320c33c8f3ae4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4802b21cc23549f7eba5edb802241091ad998b35">
+        <dex dex="/Users/smir/mergestation/AndroidProjects/MeraGlove/app/build/intermediates/pre-dexed/debug/classes_ec693dd53e3f9592d997b0c009dc75929025d7a7.jar" />
     </item>
 
 </items>
